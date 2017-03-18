@@ -6,4 +6,8 @@ class JobsController < ApplicationController
     @job = Job.new
   end
 
+  def create
+    redirect_to jobs_path
+  end
+
 end
