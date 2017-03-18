@@ -15,6 +15,9 @@ class JobsController < ApplicationController
     redirect_to jobs_path
   end
 
+  def edit
+  end
+
   private
 
   def job_params
