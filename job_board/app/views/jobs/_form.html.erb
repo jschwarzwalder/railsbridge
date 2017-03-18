@@ -1,11 +1,11 @@
 <%= form_for @job do |f| %>
-  <div>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label :title  %>
+    <%= f.text_field :title, :class => 'form-control' %>
   </div>
-  <div>
+  <div class="form-group">
     <%= f.label :description %>
-    <%= f.text_area :description, size: '60x6' %>
+    <%= f.text_area :description, size: '60x6', :class => 'form-control' %>
   </div>
   <div>
     <%= f.submit %>
