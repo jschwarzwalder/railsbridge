@@ -1,6 +1,7 @@
 class JobsController < ApplicationController
   def index
     p "In the index method!!!!!!"
+    @jobs = Job.all
   end
 
   def new
